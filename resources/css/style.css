@@ -1,0 +1,637 @@
+@font-face {
+    font-family: "spotify_circular";
+    src: url(https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Black.woff2) format("woff2");
+    src: url(https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Book.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "spotify_bold";
+    src: url(https://encore.scdn.co/1.2.3/CircularSpotify-UI-Latin-OS2v3-Bold.woff2) format("woff2");
+}   
+
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "spotify_circular",Helvetica,Arial,sans-serif;
+}
+
+body{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+header{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+nav{
+    font-weight:bolder;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0%;
+}
+
+
+.shubh-header1{
+    background-color: #000000;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 100px;
+}
+
+.shubh-navigation-bar{
+    font-family: "spotify_bold",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-right: 2%;
+    margin-right: 13%;
+    margin-left: 13%;
+    padding-left: 2%;
+    height: 100px;
+    display:flex;
+    justify-content: space-between;
+    color: #1ed760;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.shubh-brand-logo{
+    display: flex;
+    margin-top: 12px;
+}
+
+.shubh-navigation-right{
+    display: inline-block;
+    position: relative;
+    display: flex;
+}
+
+.shubh-right-nav{
+    height: 100%;
+    align-items: center;
+}
+
+.shubh-text-a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.shubh-list-menus{
+    font-family: "spotify_bold",Helvetica,Arial,sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.5;
+    display: flex;
+    list-style: none;
+    margin-top: -4%;
+    margin-bottom: -4%;
+    align-items: center;
+}
+
+.shubh-list-a{
+    padding: 32px 23px;
+    cursor: pointer;
+}
+
+[dir=ltr].shubh-list-a{
+    padding-right: 0px;
+}
+
+.dropdown-premium{
+    padding: 32px 23px;
+    font-size: 16px;
+}
+
+.shubh-list-a:hover,
+.dropdown-premium:hover,
+.shubh-text-a:hover
+{
+    color:#1ed760;
+}
+
+.shubh-dropdown-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
+    margin-left: -1%;
+    display: none;
+    position: absolute;
+    background-color: #282828;
+    width: 350px;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.shubh-ul-premium{
+    align-items: center;
+}
+
+.dropdown-list{
+    align-items: center;
+    height: 93px;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+}
+  
+.dropdown-list:hover{
+    background-color: black;
+}
+
+.dropdown-premium:hover .shubh-dropdown-content{
+    align-items: center;
+    display: block;
+    z-index: 1;
+}
+
+.list-span-p{
+    text-decoration: none;
+    font-size: 13px;
+    color: #ccc;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.list-span-h3{
+    text-decoration: none;
+    font-size: 1.17em;
+    color: #ccc;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.shubh-linked-list{
+    text-decoration: none;
+}
+
+#sep{
+    height: 22px;
+    width: 1px;
+    color:white;
+    background: currentColor;
+    display: inline-block;
+    margin: auto;
+}
+
+/* ............................. */
+
+
+.shubh-tagline{
+    align-items: center;
+    display: flex;
+    height: 520px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shubh-spotify{
+    font-size:40px;
+}
+
+.shubh-icon-list{
+    display: flex;   
+    justify-content: center;
+    width: 85%;
+}
+
+.shubh-icons-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 285px;
+    height: 307px;
+}
+
+.shubh-icons-column p{
+    text-align: center;
+    margin: 0 8%;
+}
+ 
+/* ............................. */
+
+.spotify-credit-card-request {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 460px;
+    width: 100%;
+    font-size: x-large;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+    position: relative;
+    overflow: hidden;
+}
+
+/* ............................. */
+
+.shubh-faq{
+    align-items: center;
+    display: flex;
+    height:595px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 195px;
+    margin-right: 195px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.shubh-heading{
+    font-size:40px;
+    font-weight: 900;
+}
+
+.shubh-submissive-div{
+    font-size: 18px;
+    font-weight: 900;
+    text-align: left;
+    width: 90%;
+}
+
+.list-of-faq{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 35px;
+}
+
+.list-of-faq:hover{
+    background-color: #f0f0f0;
+    text-decoration: underline;
+}
+
+.shubh-question{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 24px);
+    padding: 2% 2.3%;
+    align-items: center;
+}
+
+/* ............................. */
+
+.shubh-submain-five{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(D:/Vinsys/Spotify_Front/resources/images/div5bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100.1%;
+    min-height: 450px;
+    min-width: 100%;
+}
+
+.subh-submain-one{
+    text-align: center;
+    padding-top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(D:/Vinsys/Spotify_Front/resources/images/div1bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100.1%;
+    min-height: 590px;
+    min-width: 100%;
+}
+
+.shubh-play-million-song {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 65px;
+    margin-left: 150px;
+    padding: 0px 100px 32px 400px;
+    color: white;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.shubh-lets-play-text{
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 80px;
+    padding: 0px 100px 32px;
+    color: white;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.shubh-content {
+    color: #1ED760;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.shubh-content button {
+    height: 50px;
+    width: auto;
+    background-color: #fff;
+    padding: .7rem 2rem;
+    border-radius: 100vw;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 100ms ease-in-out box-shadow;
+}
+.shubh-content button:hover {
+    transform: scale(1.05);
+}
+
+/* ............................. */
+
+
+footer{
+    padding: 50px;
+    background-color: black;
+    width: calc(100%-50px);
+    height: 455px;
+    color: white;
+}
+.shubh-footer-main{
+    display: flex;
+    width: 100%;
+    height: 346px;
+}
+
+.shubh-spotify-header{
+    width: 585px;
+    padding-top:40px;
+    display: flex;
+}
+
+.shubh-spotify-header ul{
+    width: 200px;
+    margin-left: 40px;
+    list-style: none;
+}
+
+.shubh-spotify-header ul li{
+    margin-bottom: 15px;
+    color: #fff;
+}
+.shubh-spotify-header ul li:hover{
+    cursor: pointer;
+    color: #1ed760;
+}
+
+.sub-domain-footer{
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub-domain-footer:hover{
+    cursor: pointer;
+    color: #1ed760;
+}
+
+#shubh-header-link{
+    cursor:auto;
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.shubh-spotify-logo-footer{
+    padding-top:30px;
+    padding-left: 10%;
+    width: 180px;
+    padding-right:10px;
+}
+
+.shubh-social-media-icon{
+    margin: 9px;
+    border-radius: 50%;
+    background-color: #222326;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.shubh-social-media-icon img{
+    background-color: #fff;
+}
+
+.shubh-social-media-icon img:hover{ 
+    background-color: #1ed760;}
+
+.shubh-legal-info{
+    display: flex;
+    padding-right: 15px;
+    padding-left:10px;
+    padding-top:60px;
+    justify-content: space-between;
+}
+
+.shubh-legal-info :first-child{
+   
+    display: flex;
+    list-style: none;
+}
+
+.shubh-legal-info :first-child li{
+    padding-top:40px;
+    color: #919496;
+    font-weight: 400;
+    margin-right:20px;
+    font-size: 12px;
+}
+
+.shubh-legal-info :first-child li:hover{
+    cursor: pointer;
+    color: #1ed760;
+}
+
+.shubh-legal-info-list{
+    list-style: none;
+    color: #919496;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.shubh-legal-info-list li{
+    padding-top: 25px;
+}
+
+.shubh-legal-info-list li:first-child:hover{
+    cursor: pointer;
+    color: #1ed760;
+}
+
+.shubh-legal-info-list li:first-child{
+    padding-left:4px;
+}
+
+.shubh-legal-info-list li span{
+    margin-left: 4px;
+}
+
+/* ............................. */
+
+.shubh-spotify-footer {
+    display: flex;
+    background-color: #121212;
+    color: #b3b3b3;
+    font-family: Arial, sans-serif;
+    padding: 80px 50px;
+    font-size: 16px;
+    font-family: SpotifyMixUI, CircularSp, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    flex-direction: row;
+}
+
+.spotify-footer-hover{
+    color: #1ed760;
+}
+
+.shubh-main-footer-div{
+    margin: auto;
+    display: flex;
+}
+
+.shubh-footer-spotify-logo{
+    align-items: flex-start;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    align-items:start;
+}
+
+.shubh-top-links-table{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+}
+
+
+
+.shubh-heading-footer{
+    color: #919496;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-top: 0%;
+    margin-bottom: 20%;
+}
+
+.shubh-sub-links{
+    list-style: none;
+}
+
+.link-too{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #fff;
+    padding: 3px 0px 15px;
+}
+
+.link-too:hover{
+    color: green;
+}
+
+.shubh-social-icons{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.shubh-social-media {
+    padding-top: 1%;
+    padding-left: 20%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.shubh-list-of-icons{
+    display: flex;
+    height: 54px;
+    width: 54px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+.link-to-media{
+    width: 54;
+    height: 54;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #222326;
+}
+
+.fa-fa-insta{
+    color: #fff;
+    background-color: #fff;
+}
+
+.fa-fa-twitter{
+    background-color: #fff;
+}
+
+.fa-fa-facebook{
+    background-color: #fff;
+}
+
+.shubh-list-of-icons{
+    display: flex;
+    gap: 10px;
+}
+
+.shubh-list-of-icons a img {
+    width: 24px; /* Size of the icon inside the circle */
+    height: 24px;
+    transition: transform 0.3s ease-in-out, filter 0.3s;
+}
+
+.shubh-list-of-icons img:hover {
+    background-color: #1ED760;
+    transform: scale(1.1);
+}
